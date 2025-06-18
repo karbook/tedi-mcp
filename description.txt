@@ -1,1 +1,1 @@
-One Agent, one Workflow and one Tool to bring you the weather in your city.
+One Agent, one Workflow and one Tool to help you navigate the web.

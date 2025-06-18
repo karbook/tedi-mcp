@@ -1,13 +1,15 @@
-import { Mastra } from '@mastra/core/mastra';
+import { Mastra } from '@mastra/core';
 import { PinoLogger } from '@mastra/loggers';
-import { weatherWorkflow } from './workflows';
-import { weatherAgent } from './agents';
+import { mcpServer } from './mcp/server';
 
 export const mastra = new Mastra({
-  workflows: { weatherWorkflow },
-  agents: { weatherAgent },
+  agents: {},
+  workflows: {},
   logger: new PinoLogger({
     name: 'Mastra',
     level: 'info',
   }),
+  mcpServers: {
+    mcpServer,
+  }
 });
